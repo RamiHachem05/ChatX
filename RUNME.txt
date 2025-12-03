@@ -1,0 +1,103 @@
+HOW TO RUN THE CHATX PROJECT
+
+Note: A virtual Python environment is not required. The project runs
+using your system’s global Python installation on Windows, macOS, and
+Linux, as long as the required libraries are installed.
+
+------------------------------------------------------------------------
+
+STEP 1: PREPARE THE FILES
+
+Download the project files and place all of them in a single directory
+(folder):
+
+client.py gui.py network.py server.py 
+
+------------------------------------------------------------------------
+
+STEP 2: INSTALL PYTHON
+
+If Python is not already installed, download Python 3 from:
+https://www.python.org/downloads/
+
+For Windows users: During installation, you must check the option “Add
+Python to PATH”.
+
+------------------------------------------------------------------------
+
+STEP 3: INSTALL DEPENDENCIES
+
+pip install PyQt5 cryptography
+
+Windows: python -m pip install PyQt5 cryptography
+
+Mac/Linux: python3 -m pip install PyQt5 cryptography
+
+------------------------------------------------------------------------
+
+STEP 4: NAVIGATE TO THE PROJECT FOLDER
+
+Windows example: cd C:\Users\YourName\Desktop\ChatX
+
+Mac/Linux example: cd /Users/YourName/Desktop/ChatX
+
+------------------------------------------------------------------------
+
+STEP 5: RUN THE SERVER
+
+Windows: python server.py
+
+Mac/Linux: python3 server.py
+
+Important: Keep this terminal window open while the clients are running.
+
+------------------------------------------------------------------------
+
+STEP 6: RUN THE CLIENTS
+
+CLIENT A (Alice)
+
+1.  Open a new terminal window.
+2.  Navigate to the project folder.
+3.  Run: Windows: python client.py Mac/Linux: python3 client.py
+4.  Enter username: Alice
+
+------------------------------------------------------------------------
+
+CLIENT B (Bob)
+
+1.  Open another new terminal window.
+2.  Navigate to the project folder.
+3.  Run: Windows: python client.py Mac/Linux: python3 client.py
+4.  Enter username: Bob
+5.  Confirm that the DEBUG encryption key matches Client A.
+
+------------------------------------------------------------------------
+
+STEP 7: START CHATTING AND SENDING FILES
+
+A. TEST TEXT CHAT
+
+1.  Click “Refresh Peers” on both clients.
+2.  Each user should appear in the other client’s list.
+3.  Click the other user’s name to connect.
+4.  Type a message such as: “Hello Encrypted World” and press Send.
+
+SUCCESS: The message appears clearly in the chat window.
+
+------------------------------------------------------------------------
+
+B. TEST FILE TRANSFER
+
+1.  In the file section (bottom left), click “Browse”.
+2.  Select a file from your computer (for example, a small image or text
+    file).
+3.  Click “Send File”.
+
+SUCCESS: You will see a progress bar fill up.
+
+CHECK: Go to your project folder on the receiving computer. Open the
+“downloads” folder. The received file should be there.
+
+------------------------------------------------------------------------
+
